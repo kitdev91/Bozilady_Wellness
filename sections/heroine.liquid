@@ -1,0 +1,80 @@
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-tag1">
+      <span style="color: {{ section.settings.hero_tag_color_1 }}">{{ section.settings.hero_prefix_1 }}<br />{{ section.settings.hero_tag_1 }}</span>
+    </div>
+    <div class="hero-tag2">
+      <span style="color: {{ section.settings.hero_tag_color_2 }}">{{ section.settings.hero_prefix_2 }}<br />{{ section.settings.hero_tag_2 }}</span>
+    </div>
+  </div>
+<div class="hero-img">
+  {%- if section.settings.hero_image != blank -%} <img class="hero-image" src="{{ section.settings.hero_image | img_url: 'large' }}" alt="hero_image">
+  {% else %}
+  <img class="hero-image" src="{{ 'massage_card.jpg' | asset_url }}" alt="hero_image">
+  {% endif %}
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Heroine",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Leading Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_prefix_1",
+      "label": "Tag Foreword",
+      "default": "Experience"
+    },
+    {
+      "type": "text",
+      "id": "hero_tag_1",
+      "label": "Tag Line",
+      "default": "Full Body Wellness"
+    },
+    {
+      "type": "text",
+      "id": "hero_prefix_2",
+      "label": "Tag Foreword",
+      "default": "Rejuvanate"
+    },
+    {
+      "type": "text",
+      "id": "hero_tag_2",
+      "label": "Tag Line",
+      "default": "Your Spirit and Health"
+    },
+    {
+      "type": "color",
+      "id": "hero_tag_color_1",
+      "label": "Tag Line Color",
+      "default": "#F2F2F3"
+    },
+    {
+      "type": "color",
+      "id": "hero_tag_color_2",
+      "label": "Tag Line Color",
+      "default": "#F2F2F3"
+    },
+    {
+      "type": "range",
+      "id": "sale_bg_opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "label": "Sale Background Opacity",
+      "default": 0.60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heroine",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

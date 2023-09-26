@@ -1,0 +1,201 @@
+#service .services{
+  position: relative;
+}
+
+#service .services .header-img .service-banner{
+  width: 100%;
+  height: 360px;
+}
+
+#service .services .service-title{
+  position: absolute;
+  color: rgb(242, 242, 242);
+  text-align: center;
+  top: 5rem;
+  left: 25rem;
+  font-size: 5rem;
+}
+
+#service .services .full-services h2{
+  text-align: center;
+}
+
+#service .services .full-services hr{
+  margin: 2rem 0;
+}
+
+#service .services .full-services .service{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#service .services .full-services .service .serv-wrapper{
+  width: 800px;
+  height: 350px;
+  margin: 30px 80px;
+  position: relative;
+  top: 1rem;
+}
+
+#service .services .full-services .service .serv-wrapper .serv-img{
+  width: 100%;
+  height: 100%;
+}
+
+#service .services .full-services .service .serv-desc{
+  width: 65%;
+  margin: 0 80px;
+}
+
+#service .services .full-services .service .serv-desc h3{
+  text-align: center;
+}
+
+#service .services .full-services .service .serv-desc .service-desc{
+  line-height: 3;
+}
+
+#service .services .full-services .service .serv-desc ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  right: 9rem;
+}
+
+#service .services .full-services .service .serv-desc .price-durtion{
+  display: block;
+  margin: 10px;
+}
+
+#service .services .full-services .service .serv-desc .book-btn{
+  background-color: rgb(255, 123, 172);
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(242, 242, 242);
+  padding: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  font-weight: 400;
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+  /* body{
+    background-color: blue;
+  } */
+
+  #service .services .service-title{
+    top: 8rem;
+    left: 9rem;
+    font-size: 4rem;
+  }
+
+  #service .services .full-services .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 9rem;
+  }
+
+  #service .services .full-services .service .serv-wrapper{
+    width: 521px;
+    height: 350px;
+    margin: 30px 80px;
+    position: relative;
+    top: 1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .price-durtion{
+    display: block;
+    margin-left: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .book-btn{
+    margin-left: 12rem;
+  }
+}
+
+  /*Large Phones */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* body{
+    background-color: purple;
+  } */
+
+  #service .services .service-title{
+    top: 8rem;
+    left: 3rem;
+    font-size: 4rem;
+  }
+
+  #service .services .full-services .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+  }
+
+  #service .services .full-services .service .serv-desc{
+    margin: 0 120px;
+  }
+
+  #service .services .full-services .service .serv-wrapper{
+    width: 521px;
+    height: 350px;
+    margin: 30px 80px;
+    position: relative;
+    top: -1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .price-durtion{
+    display: block;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .book-btn{
+    margin-left: 9rem;
+  }
+}
+
+/*Small Phones */
+@media (min-width: 1px) and (max-width: 575px){
+  /* body{
+    background-color: red;
+  } */
+
+  #service .services .service-title{
+    top: 12rem;
+    left: 1rem;
+    font-size: 2rem;
+  }
+
+  #service .services .full-services .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -2rem;
+  }
+
+  #service .services .full-services .service .serv-desc{
+    margin: 0 100px;
+  }
+
+  #service .services .full-services .service .serv-wrapper{
+    width: 246px;
+    height: 194px;
+    margin: 30px 80px;
+    position: relative;
+    top: -1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .price-durtion{
+    display: block;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  #service .services .full-services .service .serv-desc .book-btn{
+    margin-left: 3rem;
+  }
+}

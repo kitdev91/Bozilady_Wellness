@@ -1,0 +1,156 @@
+<section id=massages>
+  <div class="container-fluid massage-services">
+    <h1>{{ section.settings.massage_header }}</h1>
+    <div class="row mx-lg-n5 book-top-row">
+      {% for block in section.blocks %}
+
+        {% case block.type %}
+
+          {% when 'top-row' %}
+          <div class="col-lg-4 massage-top book-aroma">
+            {%- if block.settings.top_image != blank -%}
+              <img
+                class="resize"
+                src="{{ block.settings.top_image | img_url: 'large' }}"
+                alt="massage_image">
+            {% else %}
+              <img
+                class="resize"
+                src="{{ 'aroma_massage.jpg' | asset_url }}"
+                alt="massage_image">
+            {% endif %}
+            <h3>{{ block.settings.top_title }}</h3>
+            <p>{{ block.settings.top_desc }}</p>
+            <br>
+            <p>{{ block.settings.top_duration }}</p>
+            <a href="{{ block.settings.top_url }}">
+              <span>Book Massage</span>
+            </a>
+          </div>
+
+          {% when 'bottom-row' %}
+          <!-- <div class="row mx-lg-n5 book-bottom-row"> -->
+          <div class="col-lg-4 massage-bot book-body-scrub">
+            {%- if block.settings.bottom_image != blank -%}
+              <img
+                class="resize"
+                src="{{ block.settings.top_image | img_url: 'large' }}"
+                alt="massage_image">
+            {% else %}
+              <img
+                class="resize"
+                src="{{ 'sugar_massage.jpg' | asset_url }}"
+                alt="massage_image">
+            {% endif %}
+            <h3>{{ block.settings.bottom_title }}</h3>
+            <p>{{ block.settings.bottom_desc }}</p>
+            <br>
+            <p>{{ block.settings.bottom_duration }}</p>
+            <a href="{{ block.settings.bottom_url }}">
+              <span>Book Massage</span>
+            </a>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    <div class="sect-icon">
+      <img
+        class="small-img"
+        src="{{ 'bozilady_logo.png' | asset_url }}"
+        alt="logo_image">
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Massages",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Massages Information"
+      }, {
+        "type": "text",
+        "id": "massage_header",
+        "label": "Enter a title for Massages",
+        "default": "Massages & Services"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "top-row",
+        "name": "Massages Top",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "top_image",
+            "label": "Massage Image"
+          },
+          {
+            "type": "text",
+            "id": "top_title",
+            "label": "Massage Title",
+            "default": "Aromatherapy"
+          },
+          {
+            "type": "textarea",
+            "id": "top_desc",
+            "label": "Enter full service description",
+            "default": "Enter full service description"
+          },
+          {
+            "type": "url",
+            "id": "top_url",
+            "label": "App Link"
+          }, {
+            "type": "text",
+            "id": "top_duration",
+            "label": "Massage Price & Duration",
+            "default": "$10 ~ 30min"
+          }
+        ]
+      }, {
+        "type": "bottom-row",
+        "name": "Massages Bottom",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "bottom_image",
+            "label": "Massage Image"
+          },
+          {
+            "type": "text",
+            "id": "bottom_title",
+            "label": "Massage Title",
+            "default": "Sugar Massage"
+          },
+          {
+            "type": "textarea",
+            "id": "bottom_desc",
+            "label": "Enter full service description",
+            "default": "Enter full service description"
+          },
+          {
+            "type": "url",
+            "id": "bottom_url",
+            "label": "App Link"
+          }, {
+            "type": "text",
+            "id": "bottom_duration",
+            "label": "Massage Price & Duration",
+            "default": "$10 ~ 30min"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Massages",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

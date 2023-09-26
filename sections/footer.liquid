@@ -1,0 +1,358 @@
+<style>
+  footer {
+    background: {{ section.settings.color_footer_bg }}
+    ;
+  }
+
+  footer p {
+    color: {{ section.settings.color_footer_text }}
+    ;
+  }
+</style>
+
+<footer>
+  <img src={{ 'bozilady_logo_white.png' | asset_url }} alt="logo_white">
+  <p>{{ section.settings.footer_address }}</p>
+  <p>{{ section.settings.hours_open }}</p>
+  <p>{{ section.settings.hours_closed }}</p>
+  <p>{{ section.settings.phone_number }}</p>
+  <p>{{ section.settings.notice }}</p>
+  <div class="copyright">
+    <p>copyright &copy; 2023|Bozilady Wellness|All rights reserved</p>
+    <p>Cancellation fee: $30</p>
+  </div>
+</footer>
+
+
+
+{% schema %}
+  {
+    "name": {
+      "da": "Sidefod",
+      "de": "Fußzeile",
+      "en": "Footer",
+      "es": "Pie de página",
+      "fi": "Alatunniste",
+      "fr": "Pied de page",
+      "hi": "फुटर",
+      "it": "Footer",
+      "ja": "フッター",
+      "ko": "바닥글",
+      "nb": "Footer",
+      "nl": "Voettekst",
+      "pt-BR": "Rodapé",
+      "pt-PT": "Rodapé",
+      "sv": "Sidfot",
+      "th": "ส่วนท้าย",
+      "zh-CN": "页脚",
+      "zh-TW": "頁尾"
+    },
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "header",
+        "content": {
+          "da": "Farve",
+          "de": "Farbe",
+          "en": "Color",
+          "es": "Color",
+          "fi": "Väri",
+          "fr": "Couleur",
+          "hi": "रंग",
+          "it": "Colore",
+          "ja": "色",
+          "ko": "색상",
+          "nb": "Farge",
+          "nl": "Kleur",
+          "pt-BR": "Cor",
+          "pt-PT": "Cor",
+          "sv": "Färg",
+          "th": "สี",
+          "zh-CN": "颜色",
+          "zh-TW": "顏色"
+        }
+      },
+      {
+        "type": "color",
+        "id": "color_footer_bg",
+        "label": {
+          "da": "Baggrund",
+          "de": "Hintergrund",
+          "en": "Background",
+          "es": "Fondo",
+          "fi": "Tausta",
+          "fr": "Couleur de fond",
+          "hi": "पृष्ठभूमि",
+          "it": "Sfondo",
+          "ja": "背景",
+          "ko": "배경",
+          "nb": "Bakgrunn",
+          "nl": "Achtergrond",
+          "pt-BR": "Plano de fundo",
+          "pt-PT": "Fundo",
+          "sv": "Bakgrund",
+          "th": "พื้นหลัง",
+          "zh-CN": "背景",
+          "zh-TW": "背景"
+        },
+        "default": "#FF7BAC"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": {
+          "da": "Tekst",
+          "de": "Text",
+          "en": "Text",
+          "es": "Texto",
+          "fi": "Teksti",
+          "fr": "Texte",
+          "hi": "टेक्स्ट",
+          "it": "Testo",
+          "ja": "テキスト",
+          "ko": "텍스트",
+          "nb": "Tekst",
+          "nl": "Tekst",
+          "pt-BR": "Texto",
+          "pt-PT": "Texto",
+          "sv": "Text",
+          "th": "ข้อความ",
+          "zh-CN": "文本",
+          "zh-TW": "文字"
+        },
+        "default": "#F2F2F3"
+      },
+      {
+        "type": "text",
+        "id": "footer_address",
+        "label": "Address",
+        "default": "421 Drystack Way, Cary, NC 27519"
+      }, {
+        "type": "text",
+        "id": "hours_open",
+        "label": "Open Hours",
+        "default": "Operation Hours: Monday-Thursday: 8am-3pm"
+      }, {
+        "type": "text",
+        "id": "hours_closed",
+        "label": "Closed Hours",
+        "default": "Friday-Sunday:CLOSED"
+      }, {
+        "type": "text",
+        "id": "phone_number",
+        "label": "Phone Number",
+        "default": "(919) 423-0850"
+      }, {
+        "type": "text",
+        "id": "notice",
+        "label": "Notice"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "link_list",
+        "name": {
+          "da": "Menu",
+          "de": "Menü",
+          "en": "Menu",
+          "es": "Menú",
+          "fi": "Valikko",
+          "fr": "Menu",
+          "hi": "मेनू",
+          "it": "Menu",
+          "ja": "メニュー",
+          "ko": "메뉴",
+          "nb": "Meny",
+          "nl": "Menu",
+          "pt-BR": "Menu",
+          "pt-PT": "Menu",
+          "sv": "Meny",
+          "th": "เมนู",
+          "zh-CN": "菜单",
+          "zh-TW": "選單"
+        },
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": {
+              "da": "Overskrift",
+              "de": "Überschrift",
+              "en": "Heading",
+              "es": "Título",
+              "fi": "Otsake",
+              "fr": "Titre",
+              "hi": "शीर्षक",
+              "it": "Heading",
+              "ja": "見出し",
+              "ko": "제목",
+              "nb": "Overskrift",
+              "nl": "Kop",
+              "pt-BR": "Título",
+              "pt-PT": "Título",
+              "sv": "Rubrik",
+              "th": "ส่วนหัว",
+              "zh-CN": "标题",
+              "zh-TW": "標題"
+            },
+            "default": {
+              "da": "Hurtige links",
+              "de": "Quick-Links",
+              "en": "Quick links",
+              "es": "Enlaces rápidos",
+              "fi": "Pikalinkit",
+              "fr": "Liens rapides",
+              "hi": "त्वरित लिंक",
+              "it": "Link rapidi",
+              "ja": "クイックリンク",
+              "ko": "빠른 링크",
+              "nb": "Hurtigkoblinger",
+              "nl": "Snelle links",
+              "pt-BR": "Links rápidos",
+              "pt-PT": "Ligações rápidas",
+              "sv": "Snabblänkar",
+              "th": "ลิงก์ด่วน",
+              "zh-CN": "快速链接",
+              "zh-TW": "快速連結"
+            }
+          }, {
+            "type": "link_list",
+            "id": "menu",
+            "label": {
+              "da": "Menu",
+              "de": "Menü",
+              "en": "Menu",
+              "es": "Menú",
+              "fi": "Valikko",
+              "fr": "Menu",
+              "hi": "मेनू",
+              "it": "Menu",
+              "ja": "メニュー",
+              "ko": "메뉴",
+              "nb": "Meny",
+              "nl": "Menu",
+              "pt-BR": "Menu",
+              "pt-PT": "Menu",
+              "sv": "Meny",
+              "th": "เมนู",
+              "zh-CN": "菜单",
+              "zh-TW": "選單"
+            },
+            "default": "footer"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": {
+          "da": "Tekst",
+          "de": "Text",
+          "en": "Text",
+          "es": "Texto",
+          "fi": "Teksti",
+          "fr": "Texte",
+          "hi": "टेक्स्ट",
+          "it": "Testo",
+          "ja": "テキスト",
+          "ko": "텍스트",
+          "nb": "Tekst",
+          "nl": "Tekst",
+          "pt-BR": "Texto",
+          "pt-PT": "Texto",
+          "sv": "Text",
+          "th": "ข้อความ",
+          "zh-CN": "文本",
+          "zh-TW": "文字"
+        },
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": {
+              "da": "Overskrift",
+              "de": "Überschrift",
+              "en": "Heading",
+              "es": "Título",
+              "fi": "Otsake",
+              "fr": "Titre",
+              "hi": "शीर्षक",
+              "it": "Heading",
+              "ja": "見出し",
+              "ko": "제목",
+              "nb": "Overskrift",
+              "nl": "Kop",
+              "pt-BR": "Título",
+              "pt-PT": "Título",
+              "sv": "Rubrik",
+              "th": "ส่วนหัว",
+              "zh-CN": "标题",
+              "zh-TW": "標題"
+            },
+            "default": {
+              "da": "Fortæl om din virksomhed",
+              "de": "Rede über dein Unternehmen",
+              "en": "Talk about your business",
+              "es": "Habla sobre tu negocio",
+              "fi": "Kerro yrityksestäsi",
+              "fr": "Parlez de votre entreprise",
+              "hi": "अपने व्यवसाय के बारे में बात करें",
+              "it": "Parla della tua attività commerciale",
+              "ja": "あなたのビジネスについて語る",
+              "ko": "비즈니스에 대한 이야기하기",
+              "nb": "Snakk om bedriften din",
+              "nl": "Vertel over je bedrijf",
+              "pt-BR": "Fale sobre o seu negócio",
+              "pt-PT": "Fale sobre o seu negócio",
+              "sv": "Prata om ditt företag",
+              "th": "พูดถึงธุรกิจของคุณ",
+              "zh-CN": "介绍您的业务",
+              "zh-TW": "描述您的商家"
+            }
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": {
+              "da": "Tekst",
+              "de": "Text",
+              "en": "Text",
+              "es": "Texto",
+              "fi": "Teksti",
+              "fr": "Texte",
+              "hi": "टेक्स्ट",
+              "it": "Testo",
+              "ja": "テキスト",
+              "ko": "텍스트",
+              "nb": "Tekst",
+              "nl": "Tekst",
+              "pt-BR": "Texto",
+              "pt-PT": "Texto",
+              "sv": "Text",
+              "th": "ข้อความ",
+              "zh-CN": "文本",
+              "zh-TW": "文字"
+            },
+            "default": {
+              "da": "<p>Del butiksoplysninger, reklamer eller brandindhold med dine kunder.</p>",
+              "de": "<p>Teile deine Shop-Details, Werbeaktionen oder Markeninhalte mit deinen Kunden.</p>",
+              "en": "<p>Share store details, promotions, or brand content with your customers.</p>",
+              "es": "<p>Comparte detalles de la tienda, promociones o contenido de la marca con tus clientes.</p>",
+              "fi": "<p>Jaa myymälän tiedot, tarjoukset tai brändin sisältö asiakkaittesi kanssa.</p>",
+              "fr": "<p>Partagez les détails de la boutique, les promotions ou le contenu de la marque avec vos clients.</p>",
+              "hi": "<p>अपने ग्राहकों के साथ स्टोर विवरण, प्रचार या ब्रांड सामग्री साझा करें.</p>",
+              "it": "<p>Condividi dettagli del negozio, promozioni o contenuti del brand con i clienti.</p>",
+              "ja": "<p>ストア詳細、プロモーション、ブランドのコンテンツをお客様と共有する。</p>",
+              "ko": "<p>스토어 세부 정보, 프로모션 또는 브랜드 콘텐츠를 고객과 공유하십시오.</p>",
+              "nb": "<p>Del butikkdetaljer, kampanjer eller merkevareinnhold med kundene dine.</p>",
+              "nl": "<p>Deel winkeldetails, promoties of merkcontent met je klanten.</p>",
+              "pt-BR": "<p>Compartilhe informações da loja, promoções ou conteúdo da marca com seus clientes.</p>",
+              "pt-PT": "<p>Partilhe detalhes da loja, promoções ou conteúdo de marca com os seus clientes.</p>",
+              "sv": "<p>Dela butikens detaljer, kampanjer eller varumärkesinnehåll med dina kunder.</p>",
+              "th": "<p>แชร์รายละเอียดร้านค้า โปรโมชัน หรือเนื้อหาแบรนด์กับลูกค้าของคุณ</p>",
+              "zh-CN": "<p>与您的客户共享商店详细信息、促销信息或品牌内容。</p>",
+              "zh-TW": "<p>與顧客分享商店的詳細資訊、宣傳活動或品牌內容。</p>"
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

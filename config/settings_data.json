@@ -1,0 +1,432 @@
+{
+  "current": {
+    "sections": {
+      "header": { "type": "header", "settings": {} },
+      "heroine": {
+        "type": "heroine",
+        "settings": {}
+      },
+      "quick-book": {
+        "type": "quick-book",
+        "settings": {}
+      },
+      "welcome": {
+        "type": "welcome",
+        "settings": {}
+      },
+      "service-edu": {
+        "type": "service-edu",
+        "settings": {}
+      },
+      "massages": {
+        "type": "massages",
+        "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": { "type": "link_list", "settings": {} }
+        },
+        "block_order": ["footer-0"],
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "heroine",
+      "quick-book",
+      "welcome",
+      "service-edu",
+      "massages"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+     "header": {
+       "type": "header",
+       "settings": {
+         "logo": "shopify:\/\/shop_images\/bozilady_logo 2.png",
+         "logo_max_width": 480,
+         "main_linklist": "main-menu",
+         "message": false,
+         "home_page_only": true,
+         "message_text": "Announce something here",
+         "message_link": "",
+         "color_bg": "#3a3a3a",
+         "color_text": "#ffffff"
+       }
+     },
+     "heroine": {
+       "type": "heroine",
+       "settings": {
+         "hero_prefix_1": "Experience",
+         "hero_tag_1": "Full Body Wellness",
+         "hero_prefix_2": "Rejuvanate",
+         "hero_tag_2": "Your Spirit and Health",
+         "hero_tag_color_1": "#f2f2f3",
+         "hero_tag_color_2": "#f2f2f3",
+         "sale_bg_opacity": 0.6
+       }
+     },
+     "quick-book": {
+       "type": "quick-book",
+       "blocks": {
+         "9600fa1c-fdc2-40e5-b85d-1a8927cdc833": {
+           "type": "book",
+           "settings": {
+             "book_title": "Book Appointment",
+             "book_url": ""
+           }
+         },
+         "3740e9e8-84c0-4527-a04c-4f9bf4fa150c": {
+           "type": "book",
+           "settings": {
+             "book_title": "Book Appointment",
+             "book_url": ""
+           }
+         },
+         "7860033d-94dc-45a6-888c-7a6dccf90a74": {
+           "type": "book",
+           "settings": {
+             "book_title": "Book Appointment",
+             "book_url": ""
+           }
+         }
+       },
+       "block_order": [
+         "9600fa1c-fdc2-40e5-b85d-1a8927cdc833",
+         "3740e9e8-84c0-4527-a04c-4f9bf4fa150c",
+         "7860033d-94dc-45a6-888c-7a6dccf90a74"
+       ],
+       "settings": {
+       }
+     },
+     "welcome": {
+       "type": "welcome",
+       "settings": {
+         "welcome_title": "Welcome to Bozilady Wellness!",
+         "welcome_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       }
+     },
+     "service-edu": {
+       "type": "service-edu",
+       "blocks": {
+         "bab2964b-c78a-4a6f-b375-f5ba459d28f3": {
+           "type": "service",
+           "settings": {
+             "service_title": "Deep Tissue Massage Therapy",
+             "service_desc": "Enter full service description"
+           }
+         },
+         "a2fc93bb-1e6a-4ca6-bbfd-4645d81610cb": {
+           "type": "service",
+           "settings": {
+             "service_title": "Deep Tissue Massage Therapy",
+             "service_desc": "Enter full service description"
+           }
+         },
+         "0c1d82fa-ec68-4993-b4b8-e48bee4037fa": {
+           "type": "service",
+           "settings": {
+             "service_title": "Deep Tissue Massage Therapy",
+             "service_desc": "Enter full service description"
+           }
+         }
+       },
+       "block_order": [
+         "bab2964b-c78a-4a6f-b375-f5ba459d28f3",
+         "a2fc93bb-1e6a-4ca6-bbfd-4645d81610cb",
+         "0c1d82fa-ec68-4993-b4b8-e48bee4037fa"
+       ],
+       "settings": {
+         "service_header": "Immerse into Relaxing Therapy and Spa"
+       }
+     },
+     "massages": {
+       "type": "massages",
+       "blocks": {
+         "01042532-04cc-43f6-b48e-139ce2faff02": {
+           "type": "top-row",
+           "settings": {
+             "top_title": "Aromatherapy",
+             "top_desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+           }
+         },
+         "bc0c02ef-0eb6-4746-9bab-7b8d5e0e4d40": {
+           "type": "top-row",
+           "settings": {
+             "top_title": "Aromatherapy",
+             "top_desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+           }
+         },
+         "91456e0a-7aef-40df-bc45-f72782c8c53e": {
+           "type": "top-row",
+           "settings": {
+             "top_title": "Aromatherapy",
+             "top_desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+           }
+         },
+         "2621e419-fa14-4224-9223-7e4ea54cdda7": {
+           "type": "bottom-row",
+           "settings": {
+             "bottom_title": "Sugar Massage",
+             "bottom_desc": "Enter full service description"
+           }
+         },
+         "c8ec825e-565f-4f61-9af0-1d938fbfab4d": {
+           "type": "bottom-row",
+           "settings": {
+             "bottom_title": "Sugar Massage",
+             "bottom_desc": "Enter full service description"
+           }
+         }
+       },
+       "block_order": [
+         "01042532-04cc-43f6-b48e-139ce2faff02",
+         "bc0c02ef-0eb6-4746-9bab-7b8d5e0e4d40",
+         "91456e0a-7aef-40df-bc45-f72782c8c53e",
+         "2621e419-fa14-4224-9223-7e4ea54cdda7",
+         "c8ec825e-565f-4f61-9af0-1d938fbfab4d"
+       ],
+       "settings": {
+         "massage_header": "Massages & Services"
+       }
+     },
+     "footer": {
+       "type": "footer",
+       "blocks": {
+         "footer-0": {
+           "type": "link_list",
+           "settings": {
+             "title": "Quick links",
+             "menu": "footer"
+           }
+         }
+       },
+       "block_order": [
+         "footer-0"
+       ],
+       "settings": {
+         "color_footer_bg": "#ff7bac",
+         "color_footer_text": "#f2f2f3",
+         "footer_address": "",
+         "hours_open": "",
+         "hours_closed": "",
+         "phone_number": ""
+       }
+     }
+   },
+   "content_for_index": [
+     "heroine",
+     "quick-book",
+     "welcome",
+     "service-edu",
+     "massages"
+   ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": { "image": "", "alignment": "center center" }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": { "image": "", "alignment": "center" }
+            }
+          },
+          "block_order": ["slideshow-0", "1492095993817"],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": { "type": "map", "settings": {} },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": { "1492033877875-0": { "type": "quote", "settings": {} } },
+          "block_order": ["1492033877875-0"],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": ["1492033924902-0"],
+          "settings": { "title": "" }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": { "type": "featured_collection", "settings": {} }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": { "grid": 3 }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": { "cart_notes_enable": false }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": { "type": "link_list", "settings": {} },
+            "text": { "type": "text", "settings": {} }
+          },
+          "block_order": ["link_list", "text"],
+          "settings": {
+            "color_footer_bg": "#FF7BAC",
+            "color_footer_text": "#F2F2F3"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

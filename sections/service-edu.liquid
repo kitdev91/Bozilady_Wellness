@@ -1,0 +1,57 @@
+<section id="service-education">
+  <div class="education">
+    <h1>{{ section.settings.service_header }}</h1>
+    <div class="service-container">
+      {% for block in section.blocks %}
+        <div class="serv deep-tissue-desc">
+          <h3>{{ block.settings.service_title }}</h3>
+          <p>{{ block.settings.service_desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Service Education",
+    "max_blocks": 3,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Services Information"
+      }, {
+        "type": "text",
+        "id": "service_header",
+        "label": "Enter a title for services",
+        "default": "Immerse into Relaxing Therapy and Spa"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "service",
+        "name": "Services",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "service_title",
+            "label": "Service Title",
+            "default": "Deep Tissue Massage Therapy"
+          }, {
+            "type": "textarea",
+            "id": "service_desc",
+            "label": "Enter full service description",
+            "default": "Enter full service description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Service Education",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

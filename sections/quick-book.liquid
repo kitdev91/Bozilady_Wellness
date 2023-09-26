@@ -1,0 +1,50 @@
+<section id="quick-book">
+  <div class="container book-container">
+    <div class="row justify-content-md-center">
+      {% for block in section.blocks %}
+      <div class="col-lg book consult">
+        <a href="{{ block.settings.book_url }}">{{ block.settings.book_title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Quick Book",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Add A Book"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "book",
+      "name": "Books",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "book_title",
+          "label": "Booking Title",
+          "default": "Book Appointment"
+        },
+        {
+          "type": "url",
+          "id": "book_url",
+          "label": "App Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quick Book",
+      "category": "Appointment"
+    }
+  ]
+}
+{% endschema %}
